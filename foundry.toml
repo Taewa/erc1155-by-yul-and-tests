@@ -1,5 +1,6 @@
-[default]
+[profile.default]
 src = 'src'
 out = 'out'
 libs = ['lib']
 ffi = true
+strict-assembly = true
