@@ -225,7 +225,8 @@ contract ERC1155YulTest is Test {
     function testEmitTransferSingle() public {
         vm.prank(address(yulDeployer));
         // Testing event emit
-        // It needs 2 steps
+        // It needs 3 steps
+        // #0 make sure to declare event TransferSingle(...)
         // #1 call expectEmit. First 3 'true's are the 'indexed' topics. In Solidity/Yul, Only 3 indexed topics can be added per event
         vm.expectEmit(true, true, true, true);
         
